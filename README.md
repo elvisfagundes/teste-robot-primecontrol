@@ -12,6 +12,7 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 Robot Framework
 Browser Library
 Python
+NodeJS
 ```
 
 ## ⚙️ Executando os testes
@@ -23,6 +24,8 @@ robot -d ./logs tests/
 ```
 
 Dessa maneira a pasta logs será povoada com reports e logs da execução realizada, sem acumular arquivos desnecessários e sendo possível análise dos testes realizados.
+
+Não foram utilizadas tags para definir inicialmente os tipos de testes.
 
 ### 🔩 Analise os testes de ponta a ponta
 
@@ -40,8 +43,8 @@ Conforme explicado acima, para análise dos testes basta verificar a pasta logs 
 
 ## 📌 Versão
 
-Utilizei Git [git](https://git-scm.com/) para controle de versão. 
+Utilizei [git](https://git-scm.com/) para controle de versão. 
 
 ## 📄 Licença
 
-Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE](https://github.com/elvisfagundes/teste-robot-primecontrol/blob/main/LICENSE) para detalhes.
+Este projeto está sob a licença MIT - veja o arquivo [LICENSE](https://github.com/elvisfagundes/teste-robot-primecontrol/blob/main/LICENSE) para detalhes.
