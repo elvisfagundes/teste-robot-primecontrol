@@ -15,7 +15,7 @@ E o redirecionamento ocorre
     ...    equal
     ...    ${title}
 
-E preencho os campos com dados válidos e submeto a requisição
+E preencho o formulário de login com dados válidos submentendo o formulário 
     [Arguments]        ${account}   
 
     Fill Text    id=floatingInput          ${account}[email]

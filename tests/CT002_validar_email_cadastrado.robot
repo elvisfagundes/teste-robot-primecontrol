@@ -16,5 +16,5 @@ Cenário 2: Validar criação de uma conta com Email já cadastrado
     Quando clico sobre o botão Criar Conta
     E o redirecionamento ocorre                                      Criar Conta
     E preencho o campo Email com um email existente                  ${account}
-    Então o alerta é exibido                                         Esse email já está em uso por outra conta
-                                          
+    Então a mensagem de alerta é exibida                             Esse email já está em uso por outra conta
+                                             

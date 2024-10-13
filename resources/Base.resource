@@ -8,6 +8,7 @@ Resource    pages/Home.resource
 Resource    pages/NovaConta.resource
 Resource    pages/Login.resource
 Resource    pages/GestaoClientes.resource
+Resource    pages/ResetSenha.resource
 
 *** Keywords ***
 
@@ -20,7 +21,14 @@ Página de Login
     New Browser    browser=chromium    headless=False
     New Page    https://challenge.primecontrol.com.br/app
 
-Então o alerta é exibido    
+Dado que o usuário está logado
+    New Browser    browser=chromium    headless=False
+    New Page    https://challenge.primecontrol.com.br/app
+    Dado que seja exibido um formulário para preencher informações de login
+    E preencho o formulário com dados válidos realizando o login
+    Quando clico no link                    	                                Cadastrar Cliente
+
+Então a mensagem de alerta é exibida     
     [Arguments]        ${alert}
 
     ${element}    Set Variable    css=.alert
@@ -32,3 +40,28 @@ Então o alerta é exibido
     Get Text    ${element}  
     ...    equal
     ...    ${alert}
+
+Quando clico no link
+
+    [Arguments]        ${titulo}
+
+    ${element}    Set Variable   xpath=//a[text()="${titulo}"]
+
+    Wait For Elements State
+    ...    ${element}
+    ...    visible    5
+    
+    Click    ${element}
+    
+Então sou redirecionado para a página 
+    [Arguments]        ${titulo}
+
+    ${element}    Set Variable   text=${titulo}
+
+    Wait For Elements State
+    ...    ${element}
+    ...    visible    5
+    
+    Get Text    ${element}
+    ...    equal
+    ...    ${titulo}

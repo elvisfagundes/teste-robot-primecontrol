@@ -1,3 +1,5 @@
+# Removendo logs gerados a partir dos testes realizados localmente
 logs
 
+# Removendo cache dos testes
 resources/libs/__pycache__

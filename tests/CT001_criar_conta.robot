@@ -12,9 +12,9 @@ Test Teardown     Take Screenshot
 Cenário 1: Criar uma nova conta
     ${account}    Get Fake Account
  
-    Dado que valido a exibição do titulo principal da Home page      Uma plataforma de desafio técnico para testes automatizados.
+    Dado que valido a exibição do titulo principal da Home page                    Uma plataforma de desafio técnico para testes automatizados.
     Quando clico sobre o botão Criar Conta
-    E o redirecionamento ocorre                                      Criar Conta
-    E preencho os campos com dados válidos e submeto a requisição    ${account}
-    Então sou redirecionado a página de login                        Login
- 
+    E o redirecionamento ocorre                                                    Criar Conta
+    E preencho o formulário de login com dados válidos submentendo o formulário    ${account}
+    Então sou redirecionado para a página                                          Login
+  

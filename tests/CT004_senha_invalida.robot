@@ -15,5 +15,5 @@ Cenário 4: Validar Login com senha inválida
     Quando clico sobre o botão Fazer Login
     E o redirecionamento ocorre                                      Login
     E preencho o campo com senha inválida                       
-    Então o alerta é exibido                                         E-mail ou senha inválida.
-                                             
+    Então a mensagem de alerta é exibida                             E-mail ou senha inválida.
+  

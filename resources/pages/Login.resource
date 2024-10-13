@@ -4,21 +4,16 @@ Documentation        Ações e elementos da página Login
 Library        Browser
 
 *** Keywords ***
-Então sou redirecionado a página de login
-    [Arguments]        ${title}
 
-    ${element}    Set Variable    css=.form-signin h1
+Dado que seja exibido um formulário para preencher informações de login
+
+    ${email}       Set Variable    id=floatingInput
 
     Wait For Elements State
-    ...    ${element}
+    ...    ${email}    
     ...    visible    5
 
-    Get Text    ${element}  
-    ...    equal
-    ...    ${title}
-
-
-E preencho os campos com usuário existente realizando o login
+E preencho o formulário com dados válidos realizando o login
 
     Fill Text    id=floatingInput          mateusmartins@example.org
     Fill Text    id=floatingPassword       Teste@123
@@ -34,3 +29,6 @@ E preencho o campo com senha inválida
     Click        css=.btn-lg
     Sleep        3
 
+E clico sobre o link "Esqueci minha senha"
+    Click    xpath=//a[text()="Esqueci minha senha"]
+    
