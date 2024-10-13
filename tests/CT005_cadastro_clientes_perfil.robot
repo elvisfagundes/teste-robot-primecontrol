@@ -9,11 +9,5 @@ Test Teardown     Take Screenshot
 
 *** Test Cases ***
 
-Cenário 5: Realizar Login com sucesso
- 
-    Dado realizo      Uma plataforma de desafio técnico para testes automatizados.
-    Quando clico sobre o botão Fazer Login
-    E o redirecionamento ocorre                                      Login
-    E preencho os campos com usuário existente realizando o login                       
-    Então sou redirecionado para a página de Gestão de Clintes       Gestão de Clientes
-                                            
+Cenário 5: Realizar cadastro de clientes com sucesso na aba Perfil
+    Set Test Message    message
