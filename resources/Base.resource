@@ -25,7 +25,7 @@ Página de Login
 
 Dado que o usuário está logado
     New Browser    browser=${BROWSER}    headless=${HEADLESS}
-    New Page       ${BASE_URL}app
+    New Page       ${BASE_URL}/app
     Dado que seja exibido um formulário para preencher informações de login
     E preencho o formulário com dados válidos realizando o login
     Quando clico no link                    	                                Cadastrar Cliente
@@ -62,7 +62,7 @@ Então sou redirecionado para a página
 
     Wait For Elements State
     ...    ${element}
-    ...    visible    5
+    ...    visible 
     
     Get Text    ${element}
     ...    equal

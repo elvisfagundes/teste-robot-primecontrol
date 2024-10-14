@@ -27,7 +27,7 @@ E preencho o formulário com todos os dados obrigatórios
 
 Quando realizo a busca por um perfil recém criado
 
-    Fill Text    css=.inputSearch    Caleb Almeida
+    Fill Text    css=.inputSearch    Teste Atualizar
     Sleep    1
     Click        .btn-primary    
 
@@ -36,14 +36,15 @@ Então um modal é exibido com os dados do cliente
 
     Wait For Elements State  
     ...    ${element}
-    ...    visible    5
+    ...    visible    
 
     Get Text    ${element}
     ...    equal
     ...    Dados do Cliente
 
 Quando clico no icone de edição
-    Click    //td[text()="Caleb Almeida"]/..//a[1]
+    Sleep    5
+    Click    //td[text()="Teste Atualizar"]/..//a[1]
 
 E realizo a edição de um campo salvando os novos dados
     
@@ -66,7 +67,7 @@ E realizo a tentativa de Cadastro
     ...    email=${email}
     ...    telefone=${telefone}
     ...    CEP=${CEP}
-    ...    numero_residencia=${numeroResidencia}
+    ...    numeroResidencia=${numeroResidencia}
     ...    endereco=${endereco}
     ...    complemento=${complemento}
       
