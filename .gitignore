@@ -2,4 +2,6 @@
 logs
 
 # Removendo cache dos testes
+services/__pycache__
+
 resources/libs/__pycache__

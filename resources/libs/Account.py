@@ -10,9 +10,16 @@ def get_fake_account():
         "password":"Teste@123",
         "telefone": fake.msisdn(),
         "CEP": "81110-070",
-        "numero_residencia": fake.building_number(),
+        "numeroResidencia": fake.building_number(),
         "endereco": fake.street_name(),
         "complemento": fake.neighborhood(),
-        "github": fake.url()
+        "github": fake.url(),
+        "urlFoto": "https://firebasestorage.googleapis.com/v0/b/pagina-teste-prime.appspot.com/o/image.png?alt=media&token=9eaeb40a-cea9-4600-9e44-886ac35b890b",
+        "pais": "Brasil",
+        "genero": "Masculino",
+        "ferramentas": [
+            "Robot Framework",
+            "Cypress"
+        ]
     }
     return account

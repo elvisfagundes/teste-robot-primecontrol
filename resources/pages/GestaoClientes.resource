@@ -12,7 +12,7 @@ E preencho o formulário com todos os dados obrigatórios
     Fill Text    xpath=//label[text()="E-mail:"]/following-sibling::input                     ${account}[email]
     Fill Text    xpath=//label[text()="CEP:"]/following-sibling::input                        ${account}[CEP]
     Fill Text    xpath=//label[text()="Endereço:"]/following-sibling::input                   ${account}[endereco]
-    Fill Text    xpath=//label[text()="Número da residência:"]/following-sibling::input       ${account}[numero_residencia]
+    Fill Text    xpath=//label[text()="Número da residência:"]/following-sibling::input       ${account}[numeroResidencia]
     Fill Text    xpath=//label[text()="Complemento:"]/following-sibling::input                ${account}[complemento]
 
     Select Options By    xpath=//select       value        br  
@@ -59,14 +59,14 @@ Então um popup deve ser exibido
     Handle Future Dialogs    action=accept
     
 E realizo a tentativa de Cadastro
-    [Arguments]    ${name}    ${telefone}    ${email}    ${CEP}    ${endereco}    ${numero_residencia}    ${complemento}
+    [Arguments]    ${name}    ${telefone}    ${email}    ${CEP}    ${endereco}    ${numeroResidencia}    ${complemento}
 
     ${account}    Create Dictionary
     ...    name=${name}
     ...    email=${email}
     ...    telefone=${telefone}
     ...    CEP=${CEP}
-    ...    numero_residencia=${numero_residencia}
+    ...    numero_residencia=${numeroResidencia}
     ...    endereco=${endereco}
     ...    complemento=${complemento}
       
