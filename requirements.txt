@@ -1,0 +1,5 @@
+Faker==30.3.0
+python-dotenv==1.0.1
+robotframework==7.1
+robotframework-browser==18.9.1
+robotframework-requests==0.9.7
