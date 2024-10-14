@@ -11,6 +11,7 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 ```
 Robot Framework
 Browser Library
+JSON Library
 Requests Library
 Python
 NodeJS
@@ -54,7 +55,7 @@ Conforme explicado acima, para análise dos testes basta verificar a pasta logs 
 
 ## 📌 Versão
 
-Utilizei [git](https://git-scm.com/) para controle de versão. 
+Utilizei [GIT](https://git-scm.com/) para controle de versão. 
 
 ## 📄 Licença
 
