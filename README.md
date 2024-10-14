@@ -11,8 +11,17 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 ```
 Robot Framework
 Browser Library
+Requests Library
 Python
 NodeJS
+```
+
+O arquivo de dependências com as versões das bibliotecas utilizadas neste projetos estão no arquivo requirements.txt
+
+Para utilizar as mesmas basta utilizar o comando abaixo:
+
+```
+pip install -r requirements.txt
 ```
 
 ## ⚙️ Executando os testes
@@ -40,6 +49,8 @@ Conforme explicado acima, para análise dos testes basta verificar a pasta logs 
 * [BrowserLibrary](https://github.com/MarketSquare/robotframework-browser) - Biblioteca em Playwright para automatização WEB
 * [Python](https://www.python.org/) - Linguagem utilizada 
 * [RobotFramework](https://robotframework.org/) - O framework de testes utilizado
+* [RequestsLibrary](https://github.com/MarketSquare/robotframework-requests) - Biblioteca para testes de API
+
 
 ## 📌 Versão
 
